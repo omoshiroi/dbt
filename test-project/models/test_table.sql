@@ -6,6 +6,7 @@
 
 SELECT 
     customer_id, 
+    1 AS new_column,
     current_timestamp AS date_time 
 FROM 
     dev_rwalsh.customer_orders
