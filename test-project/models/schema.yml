@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: test_table
+    description: A table created to test out dbt and its related functionality
+
+    columns:
+        - name: customer_id
+          description: This is a unique identifier for the customer
+          tests:
+              - unique
+              - not_null
+
+        - name: date_time
+          description: Date and time when row was inserted into the database
+          tests:
+              - not_null
