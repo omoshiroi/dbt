@@ -8,13 +8,13 @@ models:
         - name: customer_id
           description: This is a unique identifier for the customer
           tests:
-              - unique
-              - not_null
+            - unique
+            - not_null
 
         - name: date_time
           description: Date and time when row was inserted into the database
           tests:
-              - not_null
+            - not_null
   - name: test_agg
     description: A table created from to test out ref dbt function
 
@@ -22,10 +22,10 @@ models:
         - name: qty
           description: The total number of rows from test_table
           tests:
-              - unique
-              - not_null
+            - unique
+            - not_null
 
         - name: date_time
           description: Date and time when row was inserted into the database
           tests:
-              - not_null
+            - not_null
