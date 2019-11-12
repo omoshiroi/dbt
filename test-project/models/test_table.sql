@@ -6,6 +6,7 @@
 
 SELECT 
     customer_id, 
+    amount,
     current_timestamp AS date_time 
 FROM 
     raw.postgressource.payment

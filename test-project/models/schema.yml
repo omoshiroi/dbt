@@ -11,6 +11,9 @@ models:
             - unique
             - not_null
 
+        - name: amount
+          description: Amount paid in USD
+
         - name: date_time
           description: Date and time when row was inserted into the database
           tests:
