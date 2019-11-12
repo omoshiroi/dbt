@@ -13,6 +13,9 @@ models:
 
         - name: amount
           description: Amount paid in USD
+          tests: 
+            - accepted_values:
+                values: ['active', 'cancelled']
 
         - name: date_time
           description: Date and time when row was inserted into the database
