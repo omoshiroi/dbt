@@ -12,5 +12,5 @@ FROM
 
 {% if is_incremental() %}
     -- this filter will only be applied on an incremental run
-    WHERE current_timestamp > (select max(date_time) from {{this}})
+WHERE current_timestamp > (select max(date_time) from {{this}})
 {% endif %}
